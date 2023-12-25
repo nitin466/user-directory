@@ -1,0 +1,66 @@
+
+.posts {
+    display: flex;
+    /* height: 6rem; */
+    /* width: 100%; */
+    overflow-x: auto;
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+}
+.post-card {
+    min-width: 27%;
+    max-width: 30%;
+    border: 3px solid blueviolet;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 2rem 1rem 2rem 0;
+    cursor: pointer;
+}
+.post-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 1rem;
+    padding: 1rem 0.1rem;
+    height: 6rem;
+    background-color: white;
+}
+.post-content {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    text-align: justify;
+
+    /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+.post-card-modal {
+    max-width: 20rem;
+    height: 20rem;
+    margin : 1rem 0 0 1rem;
+}
+/* table view  */ 
+@media screen and (max-width:760px) {
+    .post-card {
+        min-width: 46%;
+        /* max-width: 46; */
+    }
+   
+
+}
+
+/* mobile  view */
+@media screen and (max-width:480px) {
+  
+    .profile-card {
+        padding: 1rem;
+    }
+    .post-card{
+        min-width: 90%;
+        margin: 2rem 1rem 2rem 0;
+    }
+    .text2 {
+        align-items: flex-start;
+    }
+}

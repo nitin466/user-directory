@@ -1,0 +1,43 @@
+.timer-container {
+    display: flex;
+    height: 8rem;
+    border: 2px solid green;
+    width: 70%;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+    float: right;
+}
+
+
+.country-select {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.country-dropdown {
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.options{
+    padding: 1rem;
+    cursor: pointer;
+}
+/* table view  */
+@media screen and (max-width:760px) {
+    .timer-container{
+        width: 80%;
+        float: right;
+    }
+}
+/* mobile view  */
+@media screen and (max-width:480px) {
+    .timer-container {
+        width: 95%;
+        float: none;
+    } 
+    .country-select {
+        width: 15rem;
+    }
+}
